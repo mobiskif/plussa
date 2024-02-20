@@ -30,19 +30,32 @@
         <h2>Продается дом с баней и гаражом</h2>
         <figure>
             <a href="#img-home">
-                <img loading="lazy" alt="Дом, вид зимой" src="files/home/home1.jpg" height="576" width="1280"/>
+                <img loading="lazy" alt="Дом, вид зимой" src="files/home/home.jpg" height="576" width="1280"/>
             </a>
             <figcaption>Дом, вид зимой</figcaption>
         </figure>
-        <p>Продается теплый дом с баней и гаражом, участок 20 соток, ИЖС</p>
-        <p>This is the about page. <a href="#another-page">This is a link to another page</a>.</p>
+        <article>
+            <h3>Blogging with Joe Bloggs
+                <time datetime="2020-10-10">10.10.2020</time>
+            </h3>
+            <p>Продается теплый дом с баней и гаражом, участок 20 соток, ИЖС</p>
+            <p>This is the about page. <a href="#another-page">This is a link to another page</a>.</p>
+            <p> One <em>could</em> use this setup to write <s>a blog</s> short updates. For images make sure to use the
+                <code>loading="lazy"</code> attribute, so they get loaded only when needed.<label
+                        for="lazy0">1</label><input type="checkbox" id="lazy0"><small>
+
+                    You might be able to use it for <code>iframe</code> embeds too(?), but maybe just write a link to
+                    the Youtube video instead.
+
+                </small></p>
+        </article>
     </section>
 
     <section id="part1">
         <h2>Дом</h2>
         <figure>
             <a href="#img-home">
-                <img loading="lazy" alt="" src="files/part2/кадастр.png" height="806" width="1484">
+                <img loading="lazy" alt="" src="files/part1/home.jpg" height="576" width="1280">
             </a>
             <figcaption>Example of an image with a link to a larger version.</figcaption>
         </figure>
@@ -65,7 +78,7 @@
         <h2>Участок</h2>
         <figure>
             <a href="#img-home">
-                <img loading="lazy" alt="" src="files/part2/кадастр.png" height="806" width="1484">
+                <img loading="lazy" alt="" src="files/part2/home.jpg" height="576" width="1280">
             </a>
             <figcaption>Example of an image with a link to a larger version.</figcaption>
         </figure>
@@ -88,7 +101,7 @@
         <h2>Поселок</h2>
         <figure>
             <a href="#img-home">
-                <img loading="lazy" alt="" src="files/part2/кадастр.png" height="806" width="1484">
+                <img loading="lazy" alt="" src="files/part3/home.jpg" height="576" width="1280">
             </a>
             <figcaption>Example of an image with a link to a larger version.</figcaption>
         </figure>
@@ -111,7 +124,7 @@
         <h2>Проезд</h2>
         <figure>
             <a href="#img-home">
-                <img loading="lazy" alt="" src="files/part2/кадастр.png" height="806" width="1484">
+                <img loading="lazy" alt="" src="files/part4/home.jpg" height="576" width="1280">
             </a>
             <figcaption>Example of an image with a link to a larger version.</figcaption>
         </figure>
@@ -156,10 +169,23 @@
         </div>
     </section>
 
-    <section id="another-page"> <!-- ANOTHER PAGE -->
-        <p>This page is not referenced in the menu, yet it exists.</p>
+    <section id="another-page">
+        <h2>Прочее</h2>
+        <article>
+            <h3>Blogging with Joe Bloggs
+                <time datetime="2020-10-10">10.10.2020</time>
+            </h3>
+            <p>This page is not referenced in the menu, yet it exists.</p>
+            <p> One <em>could</em> use this setup to write <s>a blog</s> short updates. For images make sure to use the
+                <code>loading="lazy"</code> attribute, so they get loaded only when needed.<label
+                        for="lazy6">1</label><input type="checkbox" id="lazy6"><small>
+                    You might be able to use it for <code>iframe</code> embeds too(?), but maybe just write a link to
+                    the Youtube video instead.
+                </small></p>
+            <p><a href="#home">← back</a></p>
+        </article>
+
         <!-- You can use this grid of images in any page -->
-        <p>An example of a photo gallery with a lightbox.</p>
         <div class="grid">
             <a href="#img-01"><img loading="lazy" alt="" src="http://dummyimage.com/300x300/ddd/bbb"></a>
             <a href="#img-02"><img loading="lazy" alt="" src="http://dummyimage.com/400x300/ddd/bbb"></a>
@@ -177,7 +203,6 @@
             <a href="#img-14"><img loading="lazy" alt="" src="http://dummyimage.com/400x300/ddd/bbb"></a>
             <a href="#img-15"><img loading="lazy" alt="" src="http://dummyimage.com/300x400/ddd/bbb"></a>
         </div>
-        <p><a href="#home">← back</a></p>
     </section>
 </main>
 
