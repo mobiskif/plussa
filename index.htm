@@ -4,47 +4,71 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Продается дом с баней и гаражом</title>
-    <meta name="description" content="Продается дом в поселке Плюсса">
+    <title>Дом в деревне</title>
+    <meta name="description" content="Продается дом с баней и гаражом">
     <!-- Recommended minimum -->
     <meta property="og:title" content="Site title">
     <meta property="og:description" content="Site description">
     <meta property="og:image" content="img/site-image.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <!-- You could also inline the stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
-    <h1><a href="#home">Дом с баней и гаражом</a></h1>
+    <h1><a href="#home">Дом в деревне</a></h1>
     <nav>
-        <a href="#building">Дом</a>
-        <a href="#bath">Баня</a>
-        <a href="#plot">Участок</a>
-        <a href="#village">Поселок и станция</a>
-        <a href="#river">Лес и река</a>
-        <a href="#logistic">Как доехать</a>
+        <a href="#part1">Дом</a>
+        <a href="#part2">Участок</a>
+        <a href="#part3">Поселок</a>
+        <a href="#part4">Проезд</a>
+        <a href="#part5">Фотки</a>
     </nav>
 </header>
 
 <main>
-    <section id="home"> <!-- HOME -->
-        <h2>Продается дом в поселке Плюсса (Псковская обл.)</h2>
-        <img alt="" src="files/home1.jpg" height="576" width="1280"/>
+    <section id="home">
+        <h2>Продается дом с баней и гаражом</h2>
+        <figure>
+            <a href="#img-home">
+                <img loading="lazy" alt="Дом, вид зимой" src="files/home/home1.jpg" height="576" width="1280"/>
+            </a>
+            <figcaption>Дом, вид зимой</figcaption>
+        </figure>
+        <p>Продается теплый дом с баней и гаражом, участок 20 соток, ИЖС</p>
     </section>
 
-    <section id="building"> <!-- ABOUT -->
-        <p>This is the about page. <a href="#another-page">This is a link to another page</a>.</p>
-        <img alt="" src="files/train.jpg" style="height: 400px;"/>
+    <section id="part1">
+        <h3>Дом</h3>
         <figure>
-            <a href="#img-about">
-                <img loading="lazy" alt="" src="files/кадастр.png" height="806" width="1484">
+            <a href="#img-home">
+                <img loading="lazy" alt="" src="files/part2/кадастр.png" height="806" width="1484">
             </a>
             <figcaption>Example of an image with a link to a larger version.</figcaption>
         </figure>
+        <p>This is the about page. <a href="#another-page">This is a link to another page</a>.</p>
     </section>
 
-    <section id="plot"> <!-- NEWS -->
+    <section id="part2">
+        <h3>Участок</h3>
+        <figure>
+            <a href="#img-home">
+                <img loading="lazy" alt="" src="files/part2/кадастр.png" height="806" width="1484">
+            </a>
+            <figcaption>Example of an image with a link to a larger version.</figcaption>
+        </figure>
+        <p>This is the about page. <a href="#another-page">This is a link to another page</a>.</p>
+    </section>
+
+    <section id="part3">
+        <h3>Поселок</h3>
+        <figure>
+            <a href="#img-home">
+                <img loading="lazy" alt="" src="files/part2/кадастр.png" height="806" width="1484">
+            </a>
+            <figcaption>Example of an image with a link to a larger version.</figcaption>
+        </figure>
+        <p>This is the about page. <a href="#another-page">This is a link to another page</a>.</p>
+
         <article>
             <h2>Blogging with Joe Bloggs
                 <time datetime="2020-10-10">10.10.2020</time>
@@ -65,10 +89,18 @@
             </h2>
             <p>Honestly you don't want to know.</p>
         </article>
-
     </section>
 
-    <section id="village"> <!-- PHOTOS -->
+    <section id="part4"> <!-- PHOTOS -->
+        <h3>Проезд</h3>
+        <figure>
+            <a href="#img-home">
+                <img loading="lazy" alt="" src="files/part2/кадастр.png" height="806" width="1484">
+            </a>
+            <figcaption>Example of an image with a link to a larger version.</figcaption>
+        </figure>
+        <p>This is the about page. <a href="#another-page">This is a link to another page</a>.</p>
+
         <p>An example of a photo gallery with a lightbox.</p>
         <!-- You can use this grid of images in any page -->
         <div class="grid">
@@ -90,7 +122,8 @@
         </div>
     </section>
 
-    <section id="river"> <!-- PORTFOLIO -->
+    <section id="part5"> <!-- PORTFOLIO -->
+        <h3>Фотки</h3>
         <div class="slides">
             <figure><img loading="lazy" alt="" src="http://dummyimage.com/4000x3000/ddd/bbb"></figure>
             <figure><img loading="lazy" alt="" src="http://dummyimage.com/3000x4000/ddd/bbb"></figure>
@@ -116,7 +149,7 @@
 
     <section id="another-page"> <!-- ANOTHER PAGE -->
         <p>This page is not referenced in the menu, yet it exists.</p>
-        <p><a href="#building">← back</a></p>
+        <p><a href="#part1">← back</a></p>
     </section>
 </main>
 
@@ -124,22 +157,22 @@
 LIGHTBOX IMAGES
 ----------- -->
 <!-- PHOTOS grid -->
-<a href="#village" class="lightbox" id="img-01"><img loading="lazy" alt="" src="http://dummyimage.com/3000x3000/ddd/bbb"></a>
-<a href="#village" class="lightbox" id="img-02"><img loading="lazy" alt="" src="http://dummyimage.com/4000x3000/ddd/bbb"></a>
-<a href="#village" class="lightbox" id="img-03"><img loading="lazy" alt="" src="http://dummyimage.com/3000x4000/ddd/bbb"></a>
-<a href="#village" class="lightbox" id="img-04"><img loading="lazy" alt="" src="http://dummyimage.com/3000x3000/ddd/bbb"></a>
-<a href="#village" class="lightbox" id="img-05"><img loading="lazy" alt="" src="http://dummyimage.com/4000x3000/ddd/bbb"></a>
-<a href="#village" class="lightbox" id="img-06"><img loading="lazy" alt="" src="http://dummyimage.com/3000x4000/ddd/bbb"></a>
-<a href="#village" class="lightbox" id="img-07"><img loading="lazy" alt="" src="http://dummyimage.com/3000x3000/ddd/bbb"></a>
-<a href="#village" class="lightbox" id="img-08"><img loading="lazy" alt="" src="http://dummyimage.com/4000x3000/ddd/bbb"></a>
-<a href="#village" class="lightbox" id="img-09"><img loading="lazy" alt="" src="http://dummyimage.com/3000x4000/ddd/bbb"></a>
-<a href="#village" class="lightbox" id="img-10"><img loading="lazy" alt="" src="http://dummyimage.com/3000x3000/ddd/bbb"></a>
-<a href="#village" class="lightbox" id="img-11"><img loading="lazy" alt="" src="http://dummyimage.com/4000x3000/ddd/bbb"></a>
-<a href="#village" class="lightbox" id="img-12"><img loading="lazy" alt="" src="http://dummyimage.com/3000x4000/ddd/bbb"></a>
-<a href="#village" class="lightbox" id="img-13"><img loading="lazy" alt="" src="http://dummyimage.com/3000x3000/ddd/bbb"></a>
-<a href="#village" class="lightbox" id="img-14"><img loading="lazy" alt="" src="http://dummyimage.com/4000x3000/ddd/bbb"></a>
-<a href="#village" class="lightbox" id="img-15"><img loading="lazy" alt="" src="http://dummyimage.com/3000x4000/ddd/bbb"></a>
+<a href="#part4" class="lightbox" id="img-01"><img loading="lazy" alt="" src="http://dummyimage.com/3000x3000/ddd/bbb"></a>
+<a href="#part4" class="lightbox" id="img-02"><img loading="lazy" alt="" src="http://dummyimage.com/4000x3000/ddd/bbb"></a>
+<a href="#part4" class="lightbox" id="img-03"><img loading="lazy" alt="" src="http://dummyimage.com/3000x4000/ddd/bbb"></a>
+<a href="#part4" class="lightbox" id="img-04"><img loading="lazy" alt="" src="http://dummyimage.com/3000x3000/ddd/bbb"></a>
+<a href="#part4" class="lightbox" id="img-05"><img loading="lazy" alt="" src="http://dummyimage.com/4000x3000/ddd/bbb"></a>
+<a href="#part4" class="lightbox" id="img-06"><img loading="lazy" alt="" src="http://dummyimage.com/3000x4000/ddd/bbb"></a>
+<a href="#part4" class="lightbox" id="img-07"><img loading="lazy" alt="" src="http://dummyimage.com/3000x3000/ddd/bbb"></a>
+<a href="#part4" class="lightbox" id="img-08"><img loading="lazy" alt="" src="http://dummyimage.com/4000x3000/ddd/bbb"></a>
+<a href="#part4" class="lightbox" id="img-09"><img loading="lazy" alt="" src="http://dummyimage.com/3000x4000/ddd/bbb"></a>
+<a href="#part4" class="lightbox" id="img-10"><img loading="lazy" alt="" src="http://dummyimage.com/3000x3000/ddd/bbb"></a>
+<a href="#part4" class="lightbox" id="img-11"><img loading="lazy" alt="" src="http://dummyimage.com/4000x3000/ddd/bbb"></a>
+<a href="#part4" class="lightbox" id="img-12"><img loading="lazy" alt="" src="http://dummyimage.com/3000x4000/ddd/bbb"></a>
+<a href="#part4" class="lightbox" id="img-13"><img loading="lazy" alt="" src="http://dummyimage.com/3000x3000/ddd/bbb"></a>
+<a href="#part4" class="lightbox" id="img-14"><img loading="lazy" alt="" src="http://dummyimage.com/4000x3000/ddd/bbb"></a>
+<a href="#part4" class="lightbox" id="img-15"><img loading="lazy" alt="" src="http://dummyimage.com/3000x4000/ddd/bbb"></a>
 <!-- Other images -->
-<a href="#building" class="lightbox" id="img-about"><img loading="lazy" alt="" src="http://dummyimage.com/2400x1200/ddd/bbb"></a>
+<a href="#part1" class="lightbox" id="img-home"><img loading="lazy" alt="" src="http://dummyimage.com/2400x1200/ddd/bbb"></a>
 </body>
 </html>
