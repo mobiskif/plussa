@@ -44,7 +44,7 @@ section:target { /* Show section */
   display: block;
 }
 
-section#home { /* Show #home by default */
+section#part1 { /* Show #home by default */
   display: block;
 }
 
