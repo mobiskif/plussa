@@ -13,6 +13,22 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="style.css">
 </head>
+    <script>
+    function htmz(frame) {
+      // Write your extensions here
+
+      // The browser automatically scrolls DOM changes into view in response to user interaction.
+      // This delay prevents that, making this is the only case where we don't lean on browser defaults.
+      // Remove setTimeout wrapper to allow automatic scrolling.
+      setTimeout(() =>
+        document
+          .querySelector(frame.contentWindow.location.hash || null)
+          ?.replaceWith(...frame.contentDocument.body.childNodes)
+      );
+    }
+</script>
+<iframe hidden name="htmz" onload="window.htmz(this)"></iframe>
+
 <body>
 <header>
     <h1><a href="#part1">Дом в деревне</a></h1>
@@ -23,6 +39,7 @@
         <a href="#part4">Проезд</a>
         <a href="#part5">Галерея</a>
         <a href="#part6">Прочее</a>
+        <a href="#part4" target="htmz">htmz</a>
     </nav>
 </header>
 
